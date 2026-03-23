@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Avatar from "./Avatar";
 import PersonalInfo from "./PersonalInfo";
@@ -19,40 +19,38 @@ function PortfolioCard() {
 
   const toggleTheme = () => {
     setIsDark(!isDark);
-  }
+  };
 
   const handleLike = () => {
     setLikes(likes + 1);
   };
 
   const changeAvatar = () => {
-    setAvatarIndex((prev)=> (prev + 1) % avatars.length);
-  }
+    setAvatarIndex((prev) => (prev + 1) % avatars.length);
+  };
 
   const showAlert = () => {
     alert("Hello! Thanks for visiting profile");
-  }
+  };
   return (
     <div className={`portfolio-card ${isDark ? "dark" : "light"}`}>
       <Header />
 
       <div className="card-content">
-        <Avatar  image={avatars[avatarIndex]}/>
+        <Avatar image={avatars[avatarIndex]} />
         <PersonalInfo />
         <Bio />
 
         <div className="actions">
           <button onClick={toggleTheme}>
-            {isDark ? "Light Mode": "Dark Mode"}
-
+            {isDark ? "☀️ Light Mode" : "🌙 Dark Mode"}
           </button>
 
-          <button onClick={changeAvatar}>Change Photo</button>
+          <button onClick={changeAvatar}>🔄 Change Photo</button>
 
-          <button onClick={showAlert}>Alert</button>
+          <button onClick={showAlert}>🔔 Alert</button>
 
-          <button onClick={handleLike}>Like ({likes})</button>
-
+          <button onClick={handleLike}>❤️ Like ({likes})</button>
         </div>
       </div>
     </div>
