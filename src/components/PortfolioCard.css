@@ -19,6 +19,24 @@
     font-family:'Arial', sans-serif;
 }
 
+.portfolio-card.light {
+  background: #ffffff;
+  color: #000;
+}
+
+.portfolio-card.dark {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .portfolio-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
