@@ -1,0 +1,44 @@
+.bio-section {
+  margin-top: 15px;
+}
+
+.bio-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* 🔥 Skills container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* ✅ adds space between skills */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* 🔥 Individual skill tags */
+.skill-tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+/* Light mode */
+.portfolio-card.light .skill-tag {
+  background-color: #e0e0e0;
+  color: #222;
+}
+
+/* Dark mode */
+.portfolio-card.dark .skill-tag {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Hover effect (optional but nice) */
+.skill-tag:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}

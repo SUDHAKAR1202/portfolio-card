@@ -1,3 +1,4 @@
+import "./Bio.css"
 function Bio() {
     const bioText = "Passionate frontend developer with 3+ years of experience creating beautiful, responsive web applications. I love turning complex problems into simple, elegant solutions"
     const skills = ["React", "Javascript", "CSS", "Nodejs","Git"];
